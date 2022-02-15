@@ -1,2 +1,2 @@
 # portfolio
-Il mio portfolio di progetti 
+In this section you'll find the projects I worked on.
