@@ -1,2 +1,2 @@
-# portfolio
+# Portfolio
 In this section you'll find the projects I worked on.
