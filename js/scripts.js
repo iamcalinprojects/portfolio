@@ -164,14 +164,28 @@ document.querySelectorAll(".form__input").forEach(inputElement =>{
 
 });
 
-//Pop up with JS
-document.addEventListener('DOMContentLoaded', () =>{
-    const modalContent1 = document.querySelector("#project2");
+//Pop up with JS 
 
-    document.getElementById("clickpopup").addEventListener('click', () =>{
-         modalContent1.classList.add('active');
-       
-    });
-});
+const imagepop = document.getElementById('clickpopup');
+const containerPopup = document.querySelector('.containerpop');
+const overlay = document.getElementById('overlay');
+const btnclose = document.querySelector('.btn-close');
 
 
+imagepop.addEventListener('click', ()=>{
+    containerPopup.classList.add('show');
+    overlay.classList.add('active');
+
+  });
+
+overlay.addEventListener('click', ()=>{
+    containerPopup.classList.remove('show');
+    overlay.classList.remove('active');
+
+  });
+btnclose.addEventListener('click', ()=>{
+    containerPopup.classList.remove('show');
+    overlay.classList.remove('active');
+
+  });
+  
