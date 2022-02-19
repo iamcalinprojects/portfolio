@@ -15,7 +15,6 @@
 
  .login--form{
   margin: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +22,7 @@
 } 
 .container1{
 width: 415px;
-max-width: 415;
+min-width: 350px;
 margin: 1rem;
 padding: 2rem;
 background: #FFFFFF;
@@ -145,6 +144,11 @@ color: #008ECB;
   opacity: 0.5;
 }
 
+.resize-image{
+  max-width: 13rem;
+  display: flex;
+  margin: auto;
+}
 
 :root {
   --bs-blue: #0d6efd;
@@ -5712,13 +5716,49 @@ textarea.form-control-lg {
 }
 .modal-project2{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center;  
+  align-content: center;
+  flex-direction: column;
+}
+.modal-project2.hide{
   display: none;
 }
-.containerpop{
-  border: 2px black;
- 
+.containerpop{  
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 1090;
+    width: 500px;
+    max-width: 80%;
+    background-color: var(--bs-body-bg);
+    border-radius: 14px;        
+}
+.containerpop.show{
+  transform: translate(-50%, -50%) scale(1);
+}
+.header-close-btn{
+  display: flex;
+  padding: 1.5rem 1.5rem 0rem 0rem;
+  justify-content: right;
+}
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;  
+  z-index: 1089;
+  transition: 200ms ease-in-out;
+
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
 }
 .modal-content.active{
   display: auto;
@@ -11657,8 +11697,7 @@ html {
 }
 .masthead .masthead-avatar {
   width: 12rem;
-  border-radius: 50%;
-  z-index: 2;
+  border-radius: 50%; 
 }
 
 @media (min-width: 992px) {
