@@ -130,6 +130,48 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
    
 
+// Check if Username and Password matches
+const linkInfo = document.getElementById('getInfo');
+linkInfo.addEventListener("click", getInfo);
+
+var objPeople = [
+    {//Object@ 0 index
+        username: "Uncle",
+        password: "sam"
+    },
+    {//Object@ 1 index
+        username: "Cuda",
+        password: "core"
+    },
+    {//Object@ 2 index
+        username: "Mark",
+        password: "cody"
+    }
+];
+function getInfo() {
+    var username = document.getElementById('username').value
+    var password = document.getElementById('password').value
+
+    for(var i = 0; i < objPeople.length; i++) {
+        //check if user input matches and password of current user
+        if(username == objPeople[i].username && password ==objPeople[i].password) {
+            console.log(username + " is logged in")
+            //stop the function if this if found to be true
+            return
+        }    
+         // console.log("incorrect username or password")
+    setFormMessage(container1, "error", "Invalid username/password combination");    
+    }
+   
+
+    // inputElement.addEventListener("input", e => {
+    //     clearInputError(inputElement);
+    // });
+    function errorUsername() {
+        clearInputError(username)
+    }
+    
+};
 
 // setFormMessage(loginForm, "success", "You're logged in!");
 
@@ -138,7 +180,7 @@ container1.addEventListener("submit", e =>{
 
     //Perform your Fetch login
 
-    setFormMessage(container1, "error", "Invalid username/password combination");
+    // setFormMessage(container1, "error", "Invalid username/password combination");
 });
 
 document.querySelectorAll(".form__input").forEach(inputElement =>{
