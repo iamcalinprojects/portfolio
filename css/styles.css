@@ -128,10 +128,14 @@ color: #008ECB;
   margin: auto;
   width: 415px;
   padding-left: 333px;
-
 }
-.btnclose2{
- 
+.btnclose3{
+   margin: 1rem 1rem 0rem 0rem;
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+
+.btnclose2{ 
 
   box-sizing: content-box;
   width: 1em;
@@ -142,12 +146,31 @@ color: #008ECB;
   border: 0;
   border-radius: 0.5rem;
   opacity: 0.5;
+  font-size: 1.5rem;
 }
 
 .resize-image{
   max-width: 13rem;
   display: flex;
   margin: auto;
+}
+#map{
+  height: 100%;
+}
+.modal-content2 {
+  justify-content: center;
+  max-width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  position: relative;  
+  pointer-events: all;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0.125rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  outline: 0;
 }
 
 :root {
