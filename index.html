@@ -154,7 +154,7 @@
             </div>            
         </section>
         <div class="page-section col-lg-14" style="background: ghostwhite;">
-            <h2 class="page-section-heading text-center text-uppercase">My Workflow</h2>
+            <h2 class="page-section-heading text-center text-uppercase">The Workflow</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -313,9 +313,7 @@
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl1">
-               <!-- <div class="modal-header border-0"><button class="btn-close1" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div> -->
-                    <!-- <div class="modal-login"> -->
+            <div class="modal-dialog modal-xl1">               
                         <body1 class="login--form">                            
                             <div class="container1" id="login">                          
                                 
@@ -426,10 +424,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                 </div>
+                                <!-- Google Maps API -->
                                 <div id="map" class="ml-10" style="height: 400px; width: 650px; margin: auto;">                      
-                                    <script>function initMap(){var mapProp = {lat:37.788890, lng: -122.3981004};
-                                        let map = new google.maps.Map(document.getElementById('map'),{zoom:5, center: mapProp});
-                                        let marker = new google.maps.Marker({mapProp, map: map})}
+                                    <script>function initMap(){var Everest = {lat:27.986065, lng: 86.922623};
+                                        let map = new google.maps.Map(document.getElementById('map'),{zoom:10, center: Everest});
+                                        let marker = new google.maps.Marker({position: Everest, map: map})}
                                         </script>
                                         <script async defer
                                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9kpyfKLmUW2WvMa3N9SlbOI3scCNu-4U&callback=initMap">                
