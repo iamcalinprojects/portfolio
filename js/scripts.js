@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.5 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// maps
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -230,4 +221,88 @@ btnclose.addEventListener('click', ()=>{
     overlay.classList.remove('active');
 
   });
+   
+//To do list
+const inputBox = document.querySelector(".inputField input");
+const addBtn = document.querySelector(".inputField button");
+const ul = document.querySelector(".wrapper-todo ul");
+const li = document.getElementsByClassName("listTodo");
+const span = document.getElementsByClassName("list")
+const clearAll = document.querySelector('.footer1 button')
+
+
+inputBox.onkeyup = () =>{
+    let userData = inputBox.value; //getting user entered value
+    if(userData.trim()!= 0){//if user value aren't only spaces
+        addBtn.classList.add("active"); //active the add button
+    } else {addBtn.classList.remove("active"); //unactive the add button
+
+    }
+};
+
+function createListElement(){
+    const list = document.createElement("li");
+    list.appendChild(document.createTextNode(inputBox.value));
+    ul.appendChild(list);
+    inputBox.value = "";
+
+
+
+
+    const span1 = document.createElement('span');
+    span1.classList.add('span-delete');
+    span1.innerHTML = '<i class="fas fa-trash"></i>';
+    list.appendChild(span1);    
+    
+    //Delete a task
+    span1.addEventListener('click', ()=>{
+        ul.removeChild(list);
+        
+        
+    });
+
+
+    const spanEdit = document.createElement('span');
+    spanEdit.classList.add('span-edit');
+    spanEdit.innerHTML = '<i class="fas fa-check"></i>';
+    spanEdit.classList.add('edit')
+    list.appendChild(spanEdit);    
+
   
+    spanEdit.addEventListener('click', ()=>{
+        list.classList.toggle('done')              
+    });
+
+   
+}
+
+
+
+function inputLength(){
+    return inputBox.value.length;
+}
+
+
+function addListAfterclick(){
+    if(inputLength() > 0) {
+        createListElement();
+    }
+}
+
+addBtn.addEventListener('click', addListAfterclick);
+
+function addListAfterKeypress(e) {
+    if(inputLength() > 0 && e.which === 13){
+        createListElement();
+    }
+}
+
+inputBox.addEventListener("keypress",addListAfterKeypress);
+
+
+
+
+
+
+
+
