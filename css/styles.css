@@ -297,7 +297,7 @@ ul.todoList{
   height: 0;
 }
 .background-astronaut{
-  background-image: url(/assets/img/astro-mona.webp); 
+  background-image: url(/portfolio/assets/img/astro-mona.webp); 
   background-position: bottom right;
   padding: 21rem 0rem;
   /* outline: 2px solid; */
