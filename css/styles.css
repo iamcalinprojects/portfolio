@@ -1,4 +1,3 @@
-@charset "UTF-8";
  .login--form{
   margin: 0;
   display: flex;
@@ -292,7 +291,86 @@ ul.todoList{
   font-weight: bold;
   padding: 0.3rem 0.9rem;
 }
+.container-astronaut{
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.background-astronaut{
+  background-image: url(/assets/img/astro-mona.webp); 
+  background-position: bottom right;
+  padding: 21rem 0rem;
+  /* outline: 2px solid; */
+  background-repeat: no-repeat;
+  background-size: 16%;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+}
+.background-globe{
+  background-image: url(/assets/img/globe-700_preview_rev_2.png); 
+  background-position:bottom right;
+  padding: 21.4rem 0rem;
+  /* outline: 2px solid; */
+  background-repeat: no-repeat;
+  background-size: 40%;
+  height: 50%;
+  width: 105%;
+  position: absolute;
+}
+.background-illustration{
+  background-image: url(/assets/img/footer-illustration.webp); 
+  background-position: bottom left;
+  padding: 32.4rem 0rem;
+  left: -24rem;
+  background-repeat: no-repeat;
+  background-size: 48%;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+@media (max-width: 987px){
+  .background-astronaut{
+    padding: 21rem 0rem;
+    background-size: 16%;
+  }
+  .background-illustration{
+    padding: 30.4rem 0rem;
+    left: -14rem;
+    background-size: 48%;
+    z-index: -1;
+  }
+}
+@media (max-width: 756px){
+  .background-astronaut{
+    padding: 21rem 0rem;
+    background-size: 16%;
+  }
+  .background-illustration{
+    padding: 28.4rem 0rem;
+    left: -9rem;
+    background-size: 59%;
+    z-index: -1;
+  }
+}
+@media (max-width: 374px) {
+  .background-astronaut{
+    padding: 20rem 0rem;
+    background-size: 16%;
+  }
+  .background-globe{
+    padding: 20.4rem 0rem;
+    background-size: 40%;
+  }
+  .background-illustration{
+    padding: 28.4rem 0rem;
+    left: -9rem;
+    background-size: 70%;
+    z-index: -1;
+  }
 
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11775,6 +11853,7 @@ html {
   color: #1abc9c;
 }
 #mainNav .navbar-toggler {
+  margin-right: 1.5rem;
   font-size: 80%;
   padding: 0.8rem;
 }
