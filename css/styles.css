@@ -300,7 +300,6 @@ ul.todoList{
   background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/astro-mona.webp); 
   background-position: bottom right;
   padding: 21rem 0rem;
-  /* outline: 2px solid; */
   background-repeat: no-repeat;
   background-size: 16%;
   height: 50%;
@@ -311,7 +310,6 @@ ul.todoList{
   background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/globe-700_preview_rev_2.webp); 
   background-position:bottom right;
   padding: 21.4rem 0rem;
-  /* outline: 2px solid; */
   background-repeat: no-repeat;
   background-size: 46%;
   height: 50%;
