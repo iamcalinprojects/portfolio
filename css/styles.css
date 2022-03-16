@@ -197,6 +197,16 @@ color: #008ECB;
   color: white;
   outline: none;  
 }
+@media (max-width: 767px){
+  .inputField div input{
+    min-width: 85%;   
+  }
+}
+@media (max-width: 474px){
+  .inputField div input{
+    min-width: 82%;   
+  }
+}
 .inputField input::placeholder{
   color: white;
 }
