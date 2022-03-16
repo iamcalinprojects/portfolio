@@ -304,7 +304,7 @@ ul.todoList{
   background-repeat: no-repeat;
   background-size: 16%;
   height: 50%;
-  width: 100%;
+  width: 93%;
   position: absolute;
 }
 .background-globe{
@@ -313,9 +313,9 @@ ul.todoList{
   padding: 21.4rem 0rem;
   /* outline: 2px solid; */
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 46%;
   height: 50%;
-  width: 105%;
+  width: 100%;
   position: absolute;
 }
 .background-illustration{
