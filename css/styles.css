@@ -297,7 +297,7 @@ ul.todoList{
   height: 0;
 }
 .background-astronaut{
-  background-image: url(/assets/img/astro-mona.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/astro-mona.webp); 
   background-position: bottom right;
   padding: 21rem 0rem;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ ul.todoList{
   position: absolute;
 }
 .background-globe{
-  background-image: url(/assets/img/globe-700_preview_rev_2.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/globe-700_preview_rev_2.webp); 
   background-position:bottom right;
   padding: 18.4rem 0rem;
   background-repeat: no-repeat;
@@ -317,7 +317,7 @@ ul.todoList{
   position: absolute;
 }
 .background-illustration{
-  background-image: url(/assets/img/footer-illustration.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/footer-illustration.webp); 
   background-position: bottom left;
   padding: 32.4rem 0rem;
   left: -24rem;
