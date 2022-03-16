@@ -308,7 +308,7 @@ ul.todoList{
   position: absolute;
 }
 .background-globe{
-  background-image: url(/assets/img/globe-700_preview_rev_2.png); 
+  background-image: url(https://github.com/iamcalinprojects/portfolio/blob/main/assets/img/globe-700_preview_rev_2.png); 
   background-position:bottom right;
   padding: 21.4rem 0rem;
   /* outline: 2px solid; */
@@ -319,7 +319,7 @@ ul.todoList{
   position: absolute;
 }
 .background-illustration{
-  background-image: url(/assets/img/footer-illustration.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/footer-illustration.webp); 
   background-position: bottom left;
   padding: 32.4rem 0rem;
   left: -24rem;
