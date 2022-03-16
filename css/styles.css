@@ -319,7 +319,7 @@ ul.todoList{
   position: absolute;
 }
 .background-illustration{
-  background-image: url("https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/footer-illustration.webp"); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/footer-illustration.webp); 
   background-position: bottom left;
   padding: 32.4rem 0rem;
   left: -24rem;
