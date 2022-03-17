@@ -112,7 +112,7 @@ color: #008ECB;
   border: 0 !important;
   margin: auto;
   width: 415px;
-  padding-left: 90%;
+  margin-left: 90%;
 }
 .btnclose3{
    margin: 1rem 1rem 0rem 0rem;
