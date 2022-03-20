@@ -401,6 +401,118 @@ ul.todoList{
   }
 
 }
+.masthead-margin{
+  margin-left: 6rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: start;
+}
+.masthead-avatar1{
+  width: 0rem;
+}
+.icon-divider{
+  margin: 1.25rem 0 1.5rem;
+  width: 89%;
+  display: flex;
+  align-items: start;
+  opacity: 0.4;
+  margin-left: 15rem;
+  font-size: 1.5rem;
+}
+
+.subheading-margin{
+  margin-left: 15rem;
+  display: flex;
+  align-items: start;
+  font-size: 1.5rem;
+}
+
+.video-background{
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  z-index: -1;
+}
+.video-background video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.video-globe-background{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+.video-globe-background video{
+  position: absolute;
+  padding-top: 3rem;
+  /* bottom: 0; */
+  right: 0;
+  width: 39%;  
+  /* object-fit: cover; */
+  opacity: 0.8;
+  z-index: -1;
+}
+
+@media (max-width: 756px){
+  .video-background{
+    width: 100%;
+    height: 190%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .video-globe-background video{
+    position: absolute;
+    padding-top: 42rem;
+    /* bottom: 0; */
+      width: 100%;  
+    /* object-fit: cover; */
+    z-index: -1;
+  }
+  .background-astronaut{
+    padding: 32rem 0rem;
+    background-size: 56%;
+  }
+
+  .header-portfolio{
+    padding-bottom: 45rem;
+  }
+}
+
+.bmi-input{
+  display: flex;
+  padding-bottom: 2rem;
+  margin: 0rem 4rem;
+}
+.bmi-input input{
+  border-radius: .3rem;
+  border: 1px solid;
+  font-size: 1.134rem;
+}
+.bmi-input input::placeholder{
+  padding-left: .1rem;
+}
+.bmi-input input[type="text"]{
+  width: 100%;
+  margin: 0rem .2rem;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  padding-left: .4rem;
+}
+.bmi-input input[type="button"]{
+  background-color: aquamarine;
+  border: 1px solid ;
+}
+.wrapper-todo h2 b{
+  background-color: aquamarine;
+  border-radius: .3rem;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
