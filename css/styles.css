@@ -445,7 +445,7 @@ ul.todoList{
 .bmi-input{
   display: flex;
   padding-bottom: 2rem;
-  margin: 0rem 4rem;
+  margin: 0% 6%;
 }
 .bmi-input input{
   border-radius: .3rem;
