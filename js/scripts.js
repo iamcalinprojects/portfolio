@@ -221,6 +221,23 @@ btnclose.addEventListener('click', ()=>{
     overlay.classList.remove('active');
 
   });
+
+//Google maps API
+// Initialize and add the map
+function initMap() {
+    // The location of Mount Everest
+    const everest = { lat:27.986065, lng: 86.922623 };
+    // The map, centered at Mount Everest
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: everest,
+    });
+    // The marker, positioned at Everest
+    const marker = new google.maps.Marker({
+      position: everest,
+      map: map,
+    });
+  }
    
 //To do list
 const inputBox = document.querySelector(".inputField input");
