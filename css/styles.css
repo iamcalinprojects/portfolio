@@ -308,7 +308,7 @@ ul.todoList{
   height: 0;
 }
 .background-astronaut{
-  background-image: url(/assets/img/astro-mona.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/astro-mona.webp); 
   background-position: bottom right;
   padding: 16rem 0rem;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ ul.todoList{
 }
 
 .background-illustration{
-  background-image: url(/assets/img/footer-illustration.webp); 
+  background-image: url(https://raw.githubusercontent.com/iamcalinprojects/portfolio/main/assets/img/footer-illustration.webp); 
   background-position: bottom left;
   padding: 29.4rem 0rem;
   left: -24rem;
