@@ -435,6 +435,9 @@ ul.todoList{
     background-size: 80%;
     z-index: -1;
   }
+ .header-portfolio{
+  padding-bottom: 3rem;
+}
 }
 
 .bmi-input{
