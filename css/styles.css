@@ -6087,10 +6087,14 @@ textarea.form-control-lg {
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     z-index: 1090;
-    width: 500px;
-    max-width: 80%;
+    width: 40%;
     background-color: var(--bs-body-bg);
     border-radius: 14px;        
+}
+@media (max-width:998px) {
+  .containerpop{
+    width: 90%;
+  }
 }
 .containerpop.show{
   transform: translate(-50%, -50%) scale(1);
