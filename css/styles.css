@@ -13,14 +13,6 @@ padding: 2rem;
 background: #FFFFFF;
 border-radius: 18px;
 } 
-.container2{
-width: 415px;
-max-width: 415;
-margin: 1rem;
-padding: 2rem;
-background: #FFFFFF;
-border-radius: 18px;
-}
 .form > *:first-child{
   margin-top : 0;
 }
