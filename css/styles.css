@@ -109,7 +109,7 @@ color: #008ECB;
 .btnclose3{
   margin-left: 91%;
   font-size: 1.5rem;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
 @media (max-width:967px){
   .btnclose3{
