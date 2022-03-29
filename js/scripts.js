@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
+    var navbarShrink = () =>{
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItems.map((responsiveNavItem) =>{
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', event => {
 // Setting the error message when username is too short 
 
 
-function setFormMessage(formElement, type, message) {
+setFormMessage = (formElement, type, message) =>{
     const messageElement = formElement.querySelector(".form__message");
 
     messageElement.textContent = message;            
@@ -56,17 +56,17 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`form__message--${type}`);
 }
 
-function setInputError(inputElement, message) {
+setInputError = (inputElement, message) =>{
     inputElement.classList.add("form__input--error");
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
 }
-function clearInputError(inputElement) {
+clearInputError = (inputElement) =>{
     inputElement.classList.remove("form__input--error");
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
   
  // Error message when password is too short
 }
-function setFormMessage(formElement, type, message) {
+setFormMessage = (formElement, type, message) =>{
     const messageElement = formElement.querySelector(".form__message");
 
     messageElement.textContent = message;            
@@ -74,11 +74,11 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`form__message--${type}`);
 }
 
-function setInputError(inputElement, message) {
+setInputError = (inputElement, message) =>{
     inputElement.classList.add("form__input--error");
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
 }
-function clearInputError(inputElement) {
+clearInputError = (inputElement) =>{
     inputElement.classList.remove("form__input--error");
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
 }
@@ -87,7 +87,7 @@ function clearInputError(inputElement) {
 const passw = document.getElementById("signupPassword");
 const confirmpassw = document.getElementById("confirmPassword");
 
-function checkPassword(){
+checkPassword = () =>{
 
     if(passw.value != confirmpassw.value) {
         confirmpassw.setCustomValidity("Passwords didn't match"); 
@@ -121,7 +121,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
    
 
-// Check if Username and Password matches
+
+// Check if Username and Password matches of current users
 const linkInfo = document.getElementById('getInfo');
 linkInfo.addEventListener("click", getInfo);
 
@@ -139,13 +140,13 @@ var objPeople = [
         password: "cody"
     }
 ];
-function getInfo() {
+getInfo =() => {
     var username = document.getElementById('username').value
     var password = document.getElementById('password').value
 
     for(var i = 0; i < objPeople.length; i++) {
         //check if user input matches and password of current user
-        if(username == objPeople[i].username && password ==objPeople[i].password) {
+        if(username == objPeople[i].username && password == objPeople[i].password) {
             console.log(username + " is logged in")
             //stop the function if this if found to be true
             return
@@ -153,25 +154,13 @@ function getInfo() {
          // console.log("incorrect username or password")
     setFormMessage(container1, "error", "Invalid username/password combination");    
     }
-   
-
-    // inputElement.addEventListener("input", e => {
-    //     clearInputError(inputElement);
-    // });
-    
     
 };
 
-// Register a new user in our JS
-
-// setFormMessage(loginForm, "success", "You're logged in!");
-
-container1.addEventListener("submit", e =>{
+container1.addEventListener("submit", (e) =>{
     e.preventDefault();
 
     //Perform your Fetch login
-
-    // setFormMessage(container1, "error", "Invalid username/password combination");
 });
 
 document.querySelectorAll(".form__input").forEach(inputElement =>{
@@ -195,8 +184,8 @@ document.querySelectorAll(".form__input").forEach(inputElement =>{
         });
     })
 
-});
 
+});
 //Pop up with JS 
 
 const imagepop = document.getElementById('clickpopup');
@@ -224,7 +213,7 @@ btnclose.addEventListener('click', ()=>{
 
 //Google maps API
 // Initialize and add the map
-function initMap() {
+initMap = () =>{
     // The location of Mount Everest
     const everest = { lat:27.986065, lng: 86.922623 };
     // The map, centered at Mount Everest
@@ -256,7 +245,7 @@ inputBox.onkeyup = () =>{
     }
 };
 
-function createListElement(){
+var listFunction = ()=>{
     const list = document.createElement("li");
     list.appendChild(document.createTextNode(inputBox.value));
     ul.appendChild(list);
@@ -289,27 +278,29 @@ function createListElement(){
         list.classList.toggle('done')              
     });
 
+    clearAll.addEventListener("click",()=>{
+        list.remove();    
+    });
    
 }
+//Prevent empty submit 
 
-
-
-function inputLength(){
+inputLength = () =>{
     return inputBox.value.length;
 }
 
 
-function addListAfterclick(){
+addListAfterclick = ()=>{
     if(inputLength() > 0) {
-        createListElement();
+        listFunction();
     }
 }
 
 addBtn.addEventListener('click', addListAfterclick);
 
-function addListAfterKeypress(e) {
+addListAfterKeypress = (e) =>{
     if(inputLength() > 0 && e.which === 13){
-        createListElement();
+        listFunction();
     }
 }
 
@@ -317,7 +308,7 @@ inputBox.addEventListener("keypress",addListAfterKeypress);
 
 // BMI Calculator
 
-function bmi(){
+bmi = ()=> {
     const height = document.getElementById("height").value;
     const weight = document.getElementById("weight").value;
     const bmi = weight/(height*height);
