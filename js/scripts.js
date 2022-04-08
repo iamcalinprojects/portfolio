@@ -323,11 +323,3 @@ buttonBmi.addEventListener("click", ()=>{
 })
 
 
-document.getElementById("height").forEach(inputElement =>{
-    inputElement.addEventListener("blur", e => {
-        if(e.target.id === "height" && e.target.value.length > 0 && e.target.value.length < 5) {
-            setInputError(inputElement, "Password must be at least 5 characters")
-        }
-    });
-
-});

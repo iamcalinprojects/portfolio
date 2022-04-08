@@ -159,7 +159,7 @@ p {
   width: 415px;
   min-width: 350px;
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   background: #FFFFFF;
   border-radius: 18px;
 } 
@@ -252,10 +252,11 @@ border: none;
   width: 90%;
   padding-left: 95%;
 }
-.btnclose3{
-  margin-left: 93%;
+.btnclose3 {
   font-size: 1.5rem;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: end;
 }
 @media (max-width:967px){
   .btnclose3{
@@ -646,6 +647,91 @@ ul.todoList{
   border-radius: 0.3rem;
   opacity: 1;
   font-size: 1.5rem;
+}
+#genreForm{
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Fredoka One', sans-serif;
+}
+#genreForm label{
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#genreForm select{
+  width: 200px;
+  height: auto;
+  border-radius: 0.3rem;
+  background-color: bisque;
+  border: solid 1.5px darkviolet;
+}
+#genreForm{
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Fredoka One', sans-serif;
+}
+#playBtn{
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: solid 1.5px darkviolet;
+  background-color: #B97828;
+  color: #fdc238;
+  cursor: pointer;
+}
+#movieInfo {
+  width: 65%;
+  margin: 32px auto;
+}
+#movieInfo::after{
+   content: "";
+   display: table;
+   clear: both;
+}
+img#moviePoster {
+  width:  100%;
+  height:  auto;
+  display:  block;
+  margin:  auto;
+}
+
+#movieText {
+  font-family: 'Questrial';
+  color: black;
+  line-height: 1.25;
+}
+
+#movieTitle, #movieOverview {
+  padding:  32px;
+}
+#likeBtn, #dislikeBtn {
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 12px;
+  border-style: none;
+  cursor:  pointer;
+}
+
+#likeOrDislikeBtns {
+  text-align: center;
+  margin: 0px auto;
+}
+#likeBtn {
+  background-color: #249e57;
+  color: darkgreen;
+}
+#dislikeBtn {
+  background-color: #c74a4a;
+  color: #910000;
+}
+#movieOverview{
+  background-color: antiquewhite;
+  opacity: 0.8;
+  border-radius: 0.3rem;
 }
 abbr[title],
 abbr[data-bs-original-title] {
@@ -6169,12 +6255,6 @@ textarea.form-control-lg {
   padding-left: 0px;
   padding-bottom: 0px;
 }
-/* .modal-content-login{
-  margin: auto;
-  width: 415px;
-  height: 467px;
-} */
-
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
@@ -8530,6 +8610,12 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+.bg-antiquewhite{
+  background-color: antiquewhite;
+}
+.bg-film{
+  background: url(../assets/img/pexels-fwstudio.jpg) ;
 }
 
 .user-select-all {
