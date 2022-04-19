@@ -1178,7 +1178,10 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
+.img-fluid-skills {
+  max-width: 50%;
+  height: auto;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -5101,6 +5104,19 @@ textarea.form-control-lg {
   border: 0.125rem solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
 }
+.card-nobg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+}
+.card-nobg h5 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -8624,6 +8640,9 @@ textarea.form-control-lg {
 .bg-primary-radiant{
   background: rgb(40,206,170);
   background: linear-gradient(90deg, rgba(40,206,170,1) 0%, rgba(23,153,127,1) 35%, rgba(2,0,36,1) 100%);
+}
+.bg-skills{
+  background-color: #f1f3f5;
 }
 
 .user-select-all {
