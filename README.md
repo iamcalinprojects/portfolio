@@ -1,4 +1,4 @@
-# Portfolio, HTML5, CSS and Javascript 
+# Portfolio: HTML5, CSS and Javascript 
 
 In this section you'll find the mini-projects I worked on.
 
