@@ -5110,8 +5110,11 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+  background-color: #fff;
   background-clip: border-box;
   border-radius: 0.5rem;
+  padding-top: 2rem;
+  box-shadow: 0 6px 8px rgb(102 119 136 / 3%), 0 1px 2px rgb(102 119 136 / 30%);
 }
 .card-nobg h5 {
   margin-top: 1rem;
