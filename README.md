@@ -2,7 +2,7 @@
 
 In this section you'll find the mini-projects I worked on.
 
-* #### [Todo App](https://iamcalinprojects.github.io/portfolio/) - Based on Codepen by JohnPaulFich.
+*  [Todo App](https://iamcalinprojects.github.io/portfolio/) - Based on Codepen by JohnPaulFich.
 * #### [DOM manipulation](https://iamcalinprojects.github.io/portfolio/) - Playing around with DOM manipulation and vanilla JS.
 * #### [Bootstrap](https://iamcalinprojects.github.io/portfolio/) - Using Bootstrap theme for learning responsive web design.
 * #### [Film Finder App](https://iamcalinprojects.github.io/portfolio/) - A cool project using API in JS for choosing a movie based on your preferred cathegory. 
