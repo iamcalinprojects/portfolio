@@ -9,5 +9,5 @@ In this section you'll find the mini-projects I worked on.
 *  [Login and SignUp Form](https://iamcalinprojects.github.io/portfolio/) - Using JS DOM to provide a login form without the database connection. 
 *  [BMI Calculator](https://iamcalinprojects.github.io/portfolio/) - A one formula JS App.
 *  [Ecommerce](https://www.cosaregali.com/) - Based on Bootstrap theme and on Affiliate Marketing. 
-*  
+ 
 [Check my portfolio](https://iamcalinprojects.github.io/portfolio/)
