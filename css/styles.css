@@ -649,6 +649,7 @@ ul.todoList{
   font-size: 1.5rem;
 }
 #genreForm{
+  color: white;
   text-align: center;
   margin: 0px auto;
   display: block;
@@ -664,7 +665,7 @@ ul.todoList{
   width: 200px;
   height: auto;
   border-radius: 0.3rem;
-  background-color: bisque;
+  background-color:white;
   border: solid 1.5px darkviolet;
 }
 #genreForm{
@@ -679,12 +680,19 @@ ul.todoList{
   padding: 7px 10px;
   border-radius: 10px;
   border: solid 1.5px darkviolet;
-  background-color: #B97828;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 54%, rgba(2,0,36,1) 100%);
+  background-size: 300%;
+  background-position: left;
+  transition: background .5s ease-in;
   color: #fdc238;
   cursor: pointer;
 }
+#playBtn:hover{
+  background-position: right;
+}
 #movieInfo {
-  width: 65%;
+  width: 70%;
   margin: 32px auto;
 }
 #movieInfo::after{
@@ -701,8 +709,9 @@ img#moviePoster {
 
 #movieText {
   font-family: 'Questrial';
-  color: black;
   line-height: 1.25;
+  text-decoration-color: white;
+  color: rgb(193, 192, 192);
 }
 
 #movieTitle, #movieOverview {
@@ -729,8 +738,8 @@ img#moviePoster {
   color: #910000;
 }
 #movieOverview{
-  background-color: antiquewhite;
   opacity: 0.8;
+  border: solid 2px;
   border-radius: 0.3rem;
 }
 abbr[title],
@@ -5117,7 +5126,6 @@ textarea.form-control-lg {
   margin-bottom: 2rem;
   box-shadow: 0 6px 8px rgb(102 119 136 / 3%), 0 1px 2px rgb(102 119 136 / 30%);
 }
-
 .card-nobg h5 {
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -8640,7 +8648,10 @@ textarea.form-control-lg {
   background-color: antiquewhite;
 }
 .bg-film{
-  background: url(../assets/img/pexels-fwstudio.webp) ;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/popcorn.webp);
+  background-size: 30%;
 }
 .bg-primary-radiant{
   background: rgb(40,206,170);
