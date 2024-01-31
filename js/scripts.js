@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let name = document.getElementById("name").value;
     let message = document.getElementById("message").value;
     let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
 
     const params = {
       service_id: "service_calin",
@@ -144,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         name = ${name},
          email = ${email},
          message = ${message},
+         phone = ${phone}
       
         `,
       },
@@ -158,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
+           document.getElementById("phone").value = "";
       })
       .fail(function (error) {
         alert("Oops... " + JSON.stringify(error));
